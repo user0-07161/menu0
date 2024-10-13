@@ -8,6 +8,6 @@ all: build $(OUTPUT)
 $(OUTPUT): $(SRC_FILES)
 	$(CC) $(CFLAGS) -o $(OUTPUT) $(SRC_FILES)
 build:
-	cython main.py
+	cython main.py --embed
 clean:
 	rm -rf $(CLEAN_FILES)
