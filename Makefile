@@ -2,7 +2,7 @@ CLEAN_FILES = main.c menu0
 SRC_FILES = main.c
 OUTPUT = menu0
 CC = gcc
-CFLAGS = -O2 -fno-exceptions
+CFLAGS = -O2 -fno-exceptions -I/usr/include/python3.11
 
 all: build $(OUTPUT)
 $(OUTPUT): $(SRC_FILES)
