@@ -37,13 +37,14 @@ def main():
             apps[name] = dir
             with open(f"{homedir}/.menu0.json", 'w') as conf:
                 json.dump(apps, conf)
-            
             root.destroy()
             main()
             
     def remConf():
         with open(f"{homedir}/.menu0.json", 'w') as conf:
             json.dump({}, conf)
+        root.destroy()
+        main()
 
     def createButtons():
         for app in apps:
