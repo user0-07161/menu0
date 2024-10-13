@@ -11,6 +11,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Resolve dependencies
-        run: sudo apt install make gcc python3 python3-dev
+        run: sudo apt install make gcc cython python3 python3-dev
       - name: Build
         run: make all
